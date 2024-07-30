@@ -1,0 +1,10 @@
+name: "Outout Information"
+on: "workflow_dispatch"
+jobs:
+    info:
+        runs-on: "ubuntu-latest"
+        steps:
+            - name: "Output Github Context"
+              run: echo "${{toJson(github)}}"
+            - name: "Just something Lame"
+              run: echo "Deploying ...."
